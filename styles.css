@@ -1,0 +1,86 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  background-color: #fcfcfc;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.accent-color {
+  color: #5d7262;
+}
+
+.accent-bg {
+  background-color: #5d7262;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #5d7262;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.article-card,
+.product-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.article-card:hover,
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background-color: #5d7262;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #4a5b4e;
+}
+
+.footer-link {
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #5d7262;
+}
+
+img {
+  loading: lazy;
+  object-fit: cover;
+}
+
+input[type="email"]::placeholder {
+  color: #9ca3af;
+}
+
+input[type="email"]:focus {
+  outline: 2px solid #5d7262;
+  outline-offset: 2px;
+}
